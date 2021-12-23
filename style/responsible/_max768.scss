@@ -1,0 +1,232 @@
+@media (max-width: 768px) {
+    body {
+        header {
+            background: #181818;
+            .container_header {
+                padding: 0px 10px;
+                display: flex;
+                justify-content: center;
+                .navigation {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                    padding: 30px 0;
+                    .header_logo {
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: 1s;
+                        &:hover {
+                            transform: scale(1.4);
+                        }
+                        img {
+                            width: 146px;
+                        }
+                    }
+                    ul {
+                        display: none;
+                    }
+                    .together {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .login_btn {
+                            border: 1px solid white;
+                            width: 80px;
+                            height: 35px;
+                            background: transparent;
+                            cursor: pointer;
+                            transition: 1s;
+                            &:hover {
+                                background: hotpink;
+                            }
+                            a {
+                                color: #FFFFFF;
+                                font-size: 13px;
+                            }
+                        }
+                        .toggler {
+                            display: block;
+                            cursor: pointer;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            .container_main {
+                // TOGGLER_MENU STARTS
+                .toggler_menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: hotpink;
+                    width: 100%;
+                    height: 300px;
+                    transition: all 1s linear;
+                    ul {
+                        li {
+                            a {
+                                color: white;
+                                font-size: 40px;
+                                text-align: center;
+                                line-height: 60px;
+                            }
+                        }
+                    }
+                }
+                .hidden {
+                    display: none;
+                }
+                .visuallyhidden {
+                    opacity: 0;
+                }
+                // TOGGLER_MENU ENDS
+                // WORK SECTION STARTS
+                .work {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    h1 {
+                        margin-top: 60px;
+                        width: 45%;
+                        font-size: 52px!important;
+                        line-height: 62px!important;
+                        letter-spacing: 0.2px;
+                    }
+                    p {
+                        margin-top: 30px;
+                        width: 40%;
+                        font-size: 20px;
+                        line-height: 30px;
+                        letter-spacing: 0.2px;
+                    }
+                    .btn_group {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 80px;
+                        .btn {
+                            width: 178px;
+                            height: 65px;
+                            font-size: 17px;
+                            line-height: 25px;
+                            cursor: pointer;
+                            color: white;
+                        }
+                        .btn1 {
+                            background: #4452FE;
+                        }
+                        .btn2 {
+                            margin-top: 30px;
+                            margin-left: 0px!important;
+                            background: transparent;
+                            border: 1px solid white;
+                        }
+                    }
+                    figure {
+                        margin-top: 50px;
+                        width: 95%;
+                        opacity: 0.8;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                // WORK SECTION ENDS
+                // FEATURES SECTION STARTS
+                .features {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 100px;
+                    h1 {
+                        font-size: 52px;
+                        line-height: 62px;
+                    }
+                    p {
+                        width: 50%;
+                        font-size: 20px;
+                        line-height: 30px;
+                        margin-top: 40px;
+                    }
+                    .features_box {
+                        margin-top: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        .chatgroup {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            .chatbot {
+                                width: 380px!important;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .linechart {
+                                width: 160px!important;
+                                height: 100%;
+                                position: absolute;
+                                top: 150px;
+                                left: 100px!important;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .apibox {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 300px;
+                            margin-top: 150px;
+                            .apib {
+                                .pictext {
+                                    display: flex;
+                                    align-items: center;
+                                    figure {}
+                                    h4 {
+                                        margin-left: 10px;
+                                        font-size: 20px;
+                                        line-height: 30px;
+                                        text-align: left;
+                                    }
+                                }
+                                p {
+                                    margin-top: 15px;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    text-align: left;
+                                    width: 100%;
+                                }
+                            }
+                            .apibox_up {}
+                            .apibox_middle {
+                                margin-top: 60px;
+                            }
+                            .apibox_down {
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                }
+                // FEATURES SECTION ENDS
+            }
+        }
+    }
+}

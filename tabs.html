@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tabs.css">
+    <title>Tabs</title>
+</head>
+
+<body>
+    <div class="tabContainer">
+        <div class="buttonContainer">
+            <button onclick="showPanel(0, 'hotpink')">"FEATURES" BÖLMƏSİ</button>
+            <button onclick="showPanel(1, 'gold')">"CONTENTS" BÖLMƏSİ</button>
+            <button onclick="showPanel(2, '#2196f3')">"TESTIMONIALS" BÖLMƏSİ</button>
+
+        </div>
+        <div class="tabPanel tabPanel_features">
+            <div class="title_group">
+                <p>Title əlavə edin:</p>
+                <textarea class="title" rows="5" cols="33"></textarea>
+            </div>
+            <div class="desc_group">
+                <p>Description əlavə edin:</p>
+                <textarea class="description" rows="5" cols="33"></textarea>
+            </div>
+            <div class="text_group">
+                <p>Mətn əlavə edin:</p>
+                <textarea class="text" rows="5" cols="33"></textarea>
+            </div>
+            <div class="picso">
+                <p>Yükləmək istədiyiniz şəkli bura əlavə edin:</p>
+                <input type="file" class="image_input">
+            </div>
+            <button class="send">Göndər, gəlsin!</button>
+            <img class="upload_img" src="" alt="">
+        </div>
+        <div class="tabPanel tabPanel_contents">
+            <div class="title_group">
+                <p>Title əlavə edin:</p>
+                <textarea class="title_contents" rows="5" cols="33"></textarea>
+            </div>
+            <div class="desc_group">
+                <p>Description əlavə edin:</p>
+                <textarea class="description_contents" rows="5" cols="33"></textarea>
+            </div>
+            <div class="picso">
+                <p>Yükləmək istədiyiniz şəkli bura əlavə edin:</p>
+                <input type="file" class="image_input_contents">
+            </div>
+            <button class="send_contents">Göndər, gəlsin!</button>
+            <img class="upload_img_contents" src="" alt="">
+        </div>
+        <div class="tabPanel tabPanel_testimonials">
+            <div class="title_group">
+                <p>Ad əlavə edin:</p>
+                <textarea class="title" id="titleTe" rows="5" cols="33"></textarea>
+            </div>
+            <div class="desc_group">
+                <p>Position əlavə edin:</p>
+                <textarea class="description" id="descriptionTe" rows="5" cols="33"></textarea>
+            </div>
+            <div class="text_group">
+                <p>Text əlavə edin:</p>
+                <textarea class="text" id="textTe" rows="5" cols="33"></textarea>
+            </div>
+            <div class="picso">
+                <p>Yükləmək istədiyiniz şəkli bura əlavə edin:</p>
+                <input type="file" class="image_input" id="img_inputTe">
+            </div>
+
+            <button class="send">Göndər, gəlsin!</button>
+            <img class="upload_img" id="upload_imgTe" src="" alt="">
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+        <script src="./js/tab.js"></script>
+</body>
+
+</html>

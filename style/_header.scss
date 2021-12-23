@@ -1,0 +1,72 @@
+@import "reset";
+body {
+    header {
+        background: #181818;
+        .container_header {
+            padding: 0px 10px;
+            display: flex;
+            justify-content: center;
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                padding: 30px 0;
+                .header_logo {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: 1s;
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                    img {
+                        width: 186px;
+                    }
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 40%;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        a {
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            font-size: 17px;
+                            transition: 1s;
+                            &:hover {
+                                color: hotpink;
+                            }
+                        }
+                    }
+                }
+                .together {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .login_btn {
+                        border: 1px solid white;
+                        width: 120px;
+                        height: 45px;
+                        background: transparent;
+                        cursor: pointer;
+                        transition: 1s;
+                        &:hover {
+                            background: hotpink;
+                        }
+                        a {
+                            color: #FFFFFF;
+                            font-size: 17px;
+                        }
+                    }
+                    .toggler {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
